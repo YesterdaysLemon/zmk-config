@@ -112,7 +112,7 @@ done
 DOCKER_IMG="zmkfirmware/zmk-dev-arm:$ZEPHYR_VERSION"
 DOCKER_BIN="$SUDO podman"
 
-echo "Configured modules: $MODULES"
+echo "Configured modules: $(MODULES"
 MODULES=$(
     echo $MODULES |
         sed -z 's/[, \n]/;/g' | # use ; as separator
