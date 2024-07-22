@@ -17,7 +17,7 @@
       compatible = "zmk,behavior-antecedent-morph";
       //label = "ad_rep_magic";
       #binding-cells = <0>;
-        defaults = <&kp N>;
+        defaults = <&key_repeat>;
       bindings = 
         <&kp O>,         // a -> ao (sfb)
         <&MAGIC_LE>,     // b -> ble (experimental)

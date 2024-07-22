@@ -7,6 +7,7 @@
     #define _BT_SEL_KEYS_ &trans &trans &trans &trans &trans
 #endif
 
+#include "altrepeat.dtsi"
 #include "zmk-helpers/helper.h"
 #include "greek.dtsi"
 
@@ -21,7 +22,7 @@
 #include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
 #include "extra_keys.h"
-#include "altrepeat.dtsi"
+
 
 #define XXX &none
 #define ___ &trans
