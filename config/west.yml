@@ -6,8 +6,7 @@ manifest:
       url-base: https://github.com/urob
     - name: YesterdaysLemon
       url-base: https://github.com/YesterdaysLemon
-
-    projects:
+  projects:
     - name: zmk
       remote: YesterdaysLemon
       revision: main
