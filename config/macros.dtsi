@@ -1,0 +1,140 @@
+/* macros for magic keys */
+/ { 
+    macros {
+        MAGIC_LE: MAGIC_LE {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp L &kp E>; 
+        };
+        MAGIC_ON: MAGIC_ON {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;            
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp O &kp N>;
+        };
+    
+        MAGIC_UST: MAGIC_UST {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp U &kp S &kp T>;
+        };
+            
+        MAGIC_ENT: MAGIC_ENT {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp E &kp N &kp T>;
+
+        }; 
+            
+        MAGIC_ION: MAGIC_ION {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp I &kp O &kp N>;
+        };
+
+        MAGIC_QUEN: MAGIC_QUEN {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp U &kp E &kp N>;
+          };
+
+        MAGIC_MENT: MAGIC_MENT {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>; 
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp M &kp E &kp N &kp T>;
+        };
+
+        MAGIC_ER: MAGIC_ER {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp E &kp R>;
+        };
+
+        MAGIC_ES: MAGIC_ES {
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>; 
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp E &kp S>;
+        };
+
+        MAGIC_SPC_BUT: MAGIC_SPC_BUT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp SPACE &kp B &kp U &kp T>;
+        };
+
+        MAGIC_UPDIR: MAGIC_UPDIR { 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp DOT &kp FSLH>;
+        };
+
+        MAGIC_THE: MAGIC_THE { 
+            compatible = "zmk,behavior-macro";
+            #binding-cells =  <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp T &kp H &kp E>;
+        };
+      
+        REP_ND: REP_ND { 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp N &kp D>;
+        };
+
+        REP_NG: REP_NG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells =  <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp N &kp G>;
+        };
+
+        REP_HICH: REP_HICH { 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp H &kp I &kp C &kp H>;
+        };
+
+        REP_FOR: REP_FOR { 
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp F &kp O &kp R>;
+        };
+
+        REP_SPC_AND: REP_SPC_AND {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; 
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp SPACE &kp A &kp N &kp D>;
+        };
+    };
+};

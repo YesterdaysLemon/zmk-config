@@ -1,0 +1,91 @@
+/*                KEY POSITIONS
+
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │
+  │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
+  │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────────╮ LH1 LH0 │ │ RH0 RH1 ╭───────────╯
+              ╰─────────╯ ╰─────────╯    */
+
+/* macros for magic keys */
+#include "macros.dtsi"
+          
+
+/ {
+  behaviors {
+    ad_rep_magic: ad_rep_magic {
+      compatible = "zmk,behavior-antecedent-morph";
+      label = "ad_rep_magic";
+      #binding-cells = <0>;
+        defaults = <&key_repeat>;
+      bindings = 
+        <&kp O>,         // a -> ao (sfb)
+        <&MAGIC_LE>,     // b -> ble (experimental)
+        <&kp K>,         // c -> ck (scissor, cy can be cheated comfortably)
+        <&kp Y>,         // d -> dy (sfb)
+        <&kp U>,         // e -> eu (sfb) 
+        <&kp N>,         // f -> fn (sfb)
+        <&kp Y>,         // g -> gy (sfb)
+        <&kp H>,         // h -> hh (doesn't matter)
+        <&MAGIC_ON>,     // i -> ion (popular trigram)
+        <&MAGIC_UST>,    // j -> just (common follow-up)
+        <&kp S>,         // k -> ks (ring pinky outroll to ring index)
+        <&kp K>,         // l -> lk (scissor, similar to cy)
+        <&MAGIC_ENT>,    // m -> ment (popular trigram)
+        <&kp F>,         // n -> nf (sfb)
+        <&kp A>,         // o -> oa (sfb)
+        <&kp Y>,         // p -> py (sfb that cant be cheated)
+        <&MAGIC_QUEN>,    // q -> quen (qu que are already easy inrolls, but quen becomes a nasty discovered sfb with the magic key)
+        <&kp L>,         // r -> rl (sfb)
+        <&kp K>,         // s -> sk (uncomfortable pinky inroll)
+        <&MAGIC_MENT>,   // t -> tment (popular quadgram following t)
+        <&kp E>,         // u -> ue (sfb)
+        <&MAGIC_ER>,     // v -> ver (doesn't matter that much)
+        <&kp W>,         // w -> wy (sfb)
+        <&MAGIC_ES>,     // x -> xes (doesn't matter that much)             
+        <&kp Y>,         // y -> yw (sfb)
+        <&kp Z>,         // z -> zz (turns a sfb into a scissor, this one doesn't matter that much)
+        <&MAGIC_SPC_BUT>,  // , -> , but  
+        <&MAGIC_THE>,    // for white space return the, the most common word
+        <&MAGIC_THE>, 
+        <&MAGIC_THE>, 
+        <&MAGIC_THE>, 
+        <&MAGIC_THE>, 
+        <&MAGIC_THE>, 
+        <&kp DOT>,       // for numbers idk i guess dots, maybe for decimals or ips. btw i wish there was a way to put all this in a switch case, i just dont know C
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>, 
+        <&kp DOT>;
+        antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z COMMA SPACE RET BSPC DEL INS LPAR N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+        max-delay-ms = <3000>;
+      
+    };
+    ad_rep_key: ad_rep_key {
+      compatible = "zmk,behavior-antecedent-morph";
+      label = "ad_rep_key";
+      #binding-cells = <0>;
+        defaults = <&key_repeat>;
+      bindings = 
+        <&REP_ND>,      // a -> and (sfb)
+        <&REP_NG>,      // i -> ing (popular trigram)
+        <&kp F>,         // n -> f (sfb)
+        <&REP_HICH>,    // w -> which (popular w word)             
+        <&kp P>,        // y -> yp (sfb)
+        <&REP_SPC_AND>, // , -> , and   
+        <&REP_FOR>,     // for white space return the, the most common word
+        <&REP_FOR>,
+        <&REP_FOR>,
+        <&REP_FOR>,
+        <&REP_FOR>,
+        <&REP_FOR>; 
+        antecedents = <A I N W Y COMMA SPACE RET BSPC DEL INS LPAR>;
+        max-delay-ms = <250>;
+    };
+  };
+};

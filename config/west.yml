@@ -4,9 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-  projects:
-    - name: zmk
-      remote: urob
+    - name: YesterdaysLemon
+      url-base: https://github.com/YesterdaysLemon
+
+      projects:
+    - name: zmk-urob-fork
+      remote: YesterdaysLemon
       revision: main
       import: app/west.yml
     - name: zmk-helpers
