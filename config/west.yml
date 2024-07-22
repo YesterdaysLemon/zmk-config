@@ -8,7 +8,7 @@ manifest:
       url-base: https://github.com/YesterdaysLemon
 
       projects:
-    - name: zmk
+    - name: zmk-urob-fork
       remote: YesterdaysLemon
       revision: main
       import: app/west.yml
