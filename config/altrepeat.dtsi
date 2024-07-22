@@ -15,7 +15,7 @@
   behaviors {
     ad_rep_magic: ad_rep_magic {
       compatible = "zmk,behavior-antecedent-morph";
-      label = "ad_rep_magic";
+      //label = "ad_rep_magic";
       #binding-cells = <0>;
         defaults = <&key_repeat>;
       bindings = 
@@ -66,26 +66,26 @@
         max-delay-ms = <3000>;
       
     };
-    ad_rep_key: ad_rep_key {
-      compatible = "zmk,behavior-antecedent-morph";
-      label = "ad_rep_key";
-      #binding-cells = <0>;
-        defaults = <&key_repeat>;
-      bindings = 
-        <&REP_ND>,      // a -> and (sfb)
-        <&REP_NG>,      // i -> ing (popular trigram)
-        <&kp F>,         // n -> f (sfb)
-        <&REP_HICH>,    // w -> which (popular w word)             
-        <&kp P>,        // y -> yp (sfb)
-        <&REP_SPC_AND>, // , -> , and   
-        <&REP_FOR>,     // for white space return the, the most common word
-        <&REP_FOR>,
-        <&REP_FOR>,
-        <&REP_FOR>,
-        <&REP_FOR>,
-        <&REP_FOR>; 
-        antecedents = <A I N W Y COMMA SPACE RET BSPC DEL INS LPAR>;
-        max-delay-ms = <250>;
+    // ad_rep_key: ad_rep_key {
+    //   compatible = "zmk,behavior-antecedent-morph";
+    //   label = "ad_rep_key";
+    //   #binding-cells = <0>;
+    //     defaults = <&key_repeat>;
+    //   bindings = 
+    //     <&REP_ND>,      // a -> and (sfb)
+    //     <&REP_NG>,      // i -> ing (popular trigram)
+    //     <&kp F>,         // n -> f (sfb)
+    //     <&REP_HICH>,    // w -> which (popular w word)             
+    //     <&kp P>,        // y -> yp (sfb)
+    //     <&REP_SPC_AND>, // , -> , and   
+    //     <&REP_FOR>,     // for white space return the, the most common word
+    //     <&REP_FOR>,
+    //     <&REP_FOR>,
+    //     <&REP_FOR>,
+    //     <&REP_FOR>,
+    //     <&REP_FOR>; 
+    //     antecedents = <A I N W Y COMMA SPACE RET BSPC DEL INS LPAR>;
+    //     max-delay-ms = <250>;
     };
   };
 };
