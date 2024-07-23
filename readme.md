@@ -1,8 +1,8 @@
-# urob's zmk-config
+# YesterdaysLemon's zmk-config
 
 This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/)
 configuration. It consists of a 34-keys base layout that is re-used for various
-boards, including my Corneish Zen and my Planck.
+boards, but I use it for my Urchin. This is a fork of [urob's zmk-config.](https://github.com/urob/zmk-config)
 
 This branch is updated for the latest ZMK using Zephyr 3.5. A legacy version
 compatible with Zephyr 3.0 is available
