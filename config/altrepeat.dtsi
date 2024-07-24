@@ -85,7 +85,7 @@
         <&REP_FOR>,
         <&REP_FOR>,
         <&REP_FOR>; 
-        antecedents = <A I N W Y COMMA MAGIC_ENT SPACE RET BSPC DEL INS LPAR>;
+        antecedents = <A I N W Y COMMA ad_rep_key SPACE RET BSPC DEL INS LPAR>;
         max-delay-ms = <250>;
     };
   };
