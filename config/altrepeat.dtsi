@@ -78,13 +78,14 @@
         <&REP_HICH>,    // w -> which (popular w word)             
         <&kp P>,        // y -> yp (sfb)
         <&REP_SPC_AND>, // , -> , and   
+        <&kp S>,   // macro -> macros
         <&REP_FOR>,     // for white space return the, the most common word
         <&REP_FOR>,
         <&REP_FOR>,
         <&REP_FOR>,
         <&REP_FOR>,
         <&REP_FOR>; 
-        antecedents = <A I N W Y COMMA SPACE RET BSPC DEL INS LPAR>;
+        antecedents = <A I N W Y COMMA MAGIC_ENT SPACE RET BSPC DEL INS LPAR>;
         max-delay-ms = <250>;
     };
   };
