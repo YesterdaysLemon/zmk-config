@@ -230,9 +230,9 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LM     &hml LGUI S   &hml LALT T  &hml LSHFT R   &hml LCTRL D  &kp Y           X_MM      &kp F         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT A   &hmr LGUI I    X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    X_LB     &kp X         &kp K         &kp J         &kp G         &kp W           X_MB      &kp Z         &kp H         &comma_morph  &dot_morph    &qexcl         X_RB
+    X_LB     &kp X         &kp K         &kp J         &lt FN G         &kp W        X_MB      &kp Z         &kp H         &comma_morph  &dot_morph    &qexcl         X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               SMART_NUM     &lt_spc NAV 0   X_MH  &lt FN &key_repeat &smart_shft                                              X_RH
+    X_LH                                               SMART_NUM     &lt_spc NAV 0   X_MH     &ad_rep_key   &smart_shft                                               X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
