@@ -4,6 +4,24 @@ This is my personal [ZMK firmware](https://github.com/zmkfirmware/zmk/)
 configuration. It consists of a 34-keys base layout that is re-used for various
 boards, but I use it for my Urchin. This is a fork of [urob's zmk-config.](https://github.com/urob/zmk-config)
 
+## my modifications
+
+- layout has been changed from colemak to my version of magic sturdy based on [geteuer's](https://github.com/getreuer/qmk-keymap) and [ikcelaks](https://github.com/Ikcelaks/keyboard_layouts) impletations.
+- merged the antecedent morph behavior into my own ZMK fork. Then I used that to implement two new keys (magic key and a modified repeat key).
+- the greek layer also gets translated to the sturdy layout.
+- the repeat key gets moved to the thumbs, and the enter and function layer gets dropped from the thumbs.
+
+thats mostly it!
+## potential todo
+- make the repeat key output an s after my magic key. can't do this with the adaptive keys by default so a workaround will probably be needed.
+
+## keymap drawing (not exact)
+![](img/urchin.svg)
+### combos
+![](img/urchin_combos.svg)
+
+# rest of urob's read me
+
 This branch is updated for the latest ZMK using Zephyr 3.5. A legacy version
 compatible with Zephyr 3.0 is available
 [here](https://github.com/urob/zmk-config/tree/main-zephyr-3.0).
