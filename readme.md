@@ -15,6 +15,11 @@ thats mostly it!
 ## potential todo
 - make the repeat key output an s after my magic key. can't do this with the adaptive keys by default so a workaround will probably be needed.
 
+## keymap drawing
+![](img/urchin.svg)
+### combos
+![](img/urchin_combos.svg)
+
 # rest of urob's read me
 
 This branch is updated for the latest ZMK using Zephyr 3.5. A legacy version
