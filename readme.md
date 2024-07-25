@@ -15,7 +15,7 @@ thats mostly it!
 ## potential todo
 - make the repeat key output an s after my magic key. can't do this with the adaptive keys by default so a workaround will probably be needed.
 
-## keymap drawing
+## keymap drawing (not exact)
 ![](img/urchin.svg)
 ### combos
 ![](img/urchin_combos.svg)
