@@ -22,7 +22,7 @@
         <&kp O>,         // a -> ao (sfb)
         <&MAGIC_LE>,     // b -> ble (quite nice as a cheat with b)
         <&kp K>,         // c -> ck (scissor, cy can be cheated comfortably)
-        <&kp Y>,         // d -> dy (sfb)
+        <&kp G>,         // d -> dg (sfb) dy can be easily cheated
         <&kp U>,         // e -> eu (sfb) 
         <&kp N>,         // f -> fn (sfb)
         <&kp Y>,         // g -> gy (sfb)
