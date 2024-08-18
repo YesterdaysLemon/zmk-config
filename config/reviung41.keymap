@@ -1,0 +1,22 @@
+/* source key position labels */
+#include "custom-zmk-helpers/key-labels/Reviung41.h"
+
+/* map the Reviung41's extra keys */
+#define X_LT    &none 
+#define X_RT    &none 
+
+#define X_LM    &none
+#define X_RM    &none
+
+#define X_LB    &none
+#define X_RB    &none
+
+#define X_MH    &none 
+
+
+/* activate bluetooth */
+#define CONFIG_WIRELESS 1
+
+/* source the main keymap */
+#include "base.keymap"
+
